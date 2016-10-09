@@ -170,3 +170,45 @@ $header-height: 140px;
     width: 200px;
   }
 }
+
+.home-view {
+  .masthead {
+    min-height: 600px;
+    background: $color-light-grey url("../images/masthead-home.jpg") center center;
+    background-size: cover;
+
+    &__copy {
+      transform: translateY(40%);
+      color: $color-white;
+      max-width: 500px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(60);
+    }
+
+    &__description {
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(16);
+    }
+  }
+
+  .quote {
+    padding: em(20) 0;
+    text-align: center;
+
+    &__copy {
+      margin: 0;
+      padding: 0 10%;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(40);
+    }
+
+    &__title {}
+  }
+}
