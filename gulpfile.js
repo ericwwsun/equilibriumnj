@@ -154,12 +154,12 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/*.html')
-    .pipe(wiredep({
-      exclude: ['bootstrap-sass'],
-      ignorePath: /^(\.\.\/)*\.\./
-    }))
-    .pipe(gulp.dest('app'));
+  // gulp.src('app/*.html')
+  //   .pipe(wiredep({
+  //     exclude: ['bootstrap-sass'],
+  //     ignorePath: /^(\.\.\/)*\.\./
+  //   }))
+  //   .pipe(gulp.dest('app'));
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {

@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -134,8 +138,35 @@ $header-height: 140px;
 }
 
 //footer
-
 .site-footer {
-  min-height: 300px;
-  background-color: red;
+  min-height: 200px;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex: 1 1 auto;
+    font-family: $font-open-sans;
+    font-size: em(14);
+
+    .bold {
+      font-weight: 700;
+    }
+
+    a {
+      color: $color-black;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 200px;
+  }
 }
