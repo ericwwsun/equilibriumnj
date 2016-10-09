@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700" rel="stylesheet">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -19,44 +21,47 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body class="site-container">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">equilibrium</h3>
-      </div>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__top">
+          <a href="/" class="site-header__logo"><img src="images/logo.png" alt="Equilibrium LLC"></a>
+          <h1 class="site-header__headline">Integrative Medicine</h1>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+          <div class="site-header__contact">
+            <span>contact</span>
+            <span class="site-header__phone">
+              <i class="icon icon-phone">201-461-9333</i>
+            </span>
+          </div>
         </div>
       </div>
+      <nav class="site-nav">
+        <ul class="site-nav__wrapper container">
+          <li class="site-nav__item"><a href="">Home</a></li>
+          <li class="site-nav__item"><a href="">Team</a></li>
+          <li class="site-nav__item"><a href="">Services</a></li>
+          <li class="site-nav__item"><a href="">Condition We Treat</a></li>
+          <li class="site-nav__item"><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+    <main class="site-content">
+      <div class="container">
+        main content
       </div>
-    </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        footer
+      </div>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -70,23 +75,11 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->

@@ -1,0 +1,141 @@
+html {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: $base-line-height;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.container {
+  @include outer-container;
+}
+
+// sticky footer
+.site-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hidden-text {
+  position: absolute;
+  text-indent: 100%;
+  height: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+$header-height: 140px;
+
+// header
+.site-header {
+  &__top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: $header-height;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    img {
+      width: 220px;
+      margin: 0;
+      padding-right: 20px;
+      border-right: solid 1px $color-light-grey;
+    }
+  }
+
+  &__headline {
+    flex-grow: 2;
+    margin: 0;
+    padding-left: 20px;
+    font-family: $font-open-sans;
+    font-size: rem(50);
+    font-weight: 300;
+    color: $color-light-grey;
+  }
+
+  &__contact {
+    span {
+      color: $color-casal;
+      font-family: $font-open-sans;
+      font-size: em(18);
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0 em(10);
+      border-left: solid 1px $color-light-grey;
+    }
+  }
+}
+
+.site-nav {
+  background-color: $color-casal;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  &__item {
+    flex: 1 1 auto;
+
+    a {
+      display: block;
+      padding: em(30) 0;
+      color: $color-white;
+      font-family: $font-roboto;
+      font-size: rem(18);
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: em(2);
+
+      &:hover {
+        color: $color-downy;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//footer
+
+.site-footer {
+  min-height: 300px;
+  background-color: red;
+}
