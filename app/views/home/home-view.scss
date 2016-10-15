@@ -26,17 +26,50 @@
   }
 
   .quote {
-    padding: em(20) 0;
+    padding: em(40) 0;
     text-align: center;
 
-    &__copy {
+    &__title {
       margin: 0;
-      padding: 0 10%;
+      padding: 0 10% em(20);
       font-family: $font-open-sans;
       font-weight: 300;
       font-size: em(40);
     }
 
-    &__title {}
+    &__copy {
+      @include span-columns(6);
+      font-family: $font-open-sans;
+      font-size: em(18);
+    }
+  }
+
+  .reasons {
+    padding: em(50) 0;
+    background-color: $color-downy;
+    font-family: $font-open-sans;
+    color: $color-white;
+
+    &__headline {
+
+      font-size: em(40);
+      font-weight: 300;
+      margin: 0 0 em(10);
+    }
+
+    &__category {
+      @include span-columns(4);
+    }
+
+    &__title {
+      font-size: em(20);
+      margin-bottom: em(10);
+    }
+
+    &__description {
+      font-size: em(18);
+      font-weight: 300;
+      margin: 0;
+    }
   }
 }
