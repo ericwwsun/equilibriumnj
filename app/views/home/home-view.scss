@@ -1,9 +1,8 @@
 
 .home-view {
   .masthead {
-    min-height: 600px;
-    background: $color-light-grey url('images/masthead-home.jpg') center center;
-    background-size: cover;
+
+    background-image: url('images/masthead-home.jpg');
 
     &__copy {
       transform: translateY(40%);

@@ -35,6 +35,10 @@ img {
   @include outer-container;
 }
 
+.row {
+  @include row();
+}
+
 // sticky footer
 .site-container {
   display: flex;
@@ -57,4 +61,11 @@ img {
   height: 0;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.masthead {
+  min-height: 600px;
+  background-color: $color-light-grey;
+  background-position: center center;
+  background-size: cover;
 }

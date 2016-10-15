@@ -73,6 +73,11 @@ $header-height: 140px;
         color: $color-downy;
         text-decoration: none;
       }
+
+    }
+
+    &--is-active a{
+      color: $color-downy;
     }
   }
 }
