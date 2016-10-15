@@ -1,4 +1,4 @@
-$icon-font-path: '../fonts/';
+$icon-font-path: './fonts/';
 
 // bower:scss
 @import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
@@ -8,3 +8,7 @@ $icon-font-path: '../fonts/';
 @import 'variables';
 @import 'mixins';
 @import 'global';
+
+
+// inject:styles
+// endinject

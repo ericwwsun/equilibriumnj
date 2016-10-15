@@ -6,83 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>equilibrium</title>
 
+    <!-- build:base -->
+    <base href="/">
+    <!-- endbuild -->
+
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700" rel="stylesheet">
 
-    <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+    <!-- bower styles will be automatically inserted here -->
+    <!-- endinject -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <base href="/">
+    <!-- inject:css -->
+    <!-- css files will be automatically inserted here -->
+    <!-- endinject -->
   </head>
   <body class="site-container">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="site-header">
-      <div class="container">
-        <div class="site-header__top">
-          <a href="/" class="site-header__logo"><img src="images/logo.png" alt="Equilibrium LLC"></a>
-          <h1 class="site-header__headline">Integrative Medicine</h1>
-
-          <div class="site-header__contact">
-            <span>contact</span>
-            <span class="site-header__phone">
-              <i class="icon icon-phone">201-461-9333</i>
-            </span>
-          </div>
-        </div>
-      </div>
-      <nav class="site-nav">
-        <ul class="site-nav__wrapper container">
-          <li class="site-nav__item"><a href="/">Home</a></li>
-          <li class="site-nav__item"><a href="/team">Team</a></li>
-          <li class="site-nav__item"><a href="">Services</a></li>
-          <li class="site-nav__item"><a href="">Condition We Treat</a></li>
-          <li class="site-nav__item"><a href="">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div ng-include="'views/header/header.html'"></div>
 
     <main class="site-content">
       <div ng-view></div>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <ul class="site-footer__links">
-          <li class="site-footer__link bold">Services</li>
-          <li class="site-footer__link"><a href="">Physical Therapy</a></li>
-          <li class="site-footer__link"><a href="">Acupuncture</a></li>
-          <li class="site-footer__link"><a href="">Chiropractic</a></li>
-        </ul>
-        <ul class="site-footer__links">
-          <li class="site-footer__link bold"><a href="">Conditions We Treat</a></li>
-          <li class="site-footer__link bold"><a href="">Insurance Policy</a></li>
-        </ul>
-        <ul class="site-footer__links">
-          <li class="site-footer__link bold"><a href="">Frequently Asked Questions</a></li>
-          <li class="site-footer__link bold"><a href="">Team</a></li>
-        </ul>
-        <ul class="site-footer__links">
-          <li class="site-footer__link bold">158 Linwood Dr #217, Fort Lee, NJ 07024</li>
-          <li class="site-footer__link bold">201-461-9333</li>
-        </ul>
-        <ul class="site-footer__links">
-          <li class="site-footer__link">
-            <a class="site-footer__logo" href="/"><img src="images/logo.png" alt=""></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <div ng-include="'views/footer/footer.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -94,18 +46,16 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-route/angular-route.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <!-- bower js files will be automatically inserted here -->
+    <!-- endinject -->
 
-    <!-- build:js scripts/plugins.js -->
-    <!-- endbuild -->
+    <!-- inject:js -->
+    <!-- js files will be automatically inserted here -->
+    <!-- endinject -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
   </body>
 </html>

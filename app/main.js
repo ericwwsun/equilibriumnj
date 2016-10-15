@@ -22,11 +22,11 @@
     $routeProvider
       .when('/', {
         pageType: 'home',
-        templateUrl: '../views/home/home-view.html'
+        templateUrl: 'views/home/home-view.html'
       })
       .when('/team', {
         pageType: 'team',
-        templateUrl: '../views/team/team-view.html'
+        templateUrl: 'views/team/team-view.html'
       });
   }
 
