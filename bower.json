@@ -5,7 +5,8 @@
     "angular": "^1.5.8",
     "bourbon": "^4.2.7",
     "neat": "^1.8.0",
-    "angular-route": "^1.5.8"
+    "angular-route": "^1.5.8",
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
