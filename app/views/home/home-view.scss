@@ -1,11 +1,9 @@
-
 .home-view {
   .masthead {
-
-    background-image: url('images/masthead-home.jpg');
+    background-image: url("images/masthead-home.jpg");
 
     &__copy {
-      transform: translateY(40%);
+      transform: translateY(100%);
       color: $color-white;
       max-width: 500px;
     }
@@ -15,12 +13,7 @@
       font-family: $font-open-sans;
       font-weight: 300;
       font-size: em(60);
-    }
-
-    &__description {
-      font-family: $font-open-sans;
-      font-weight: 300;
-      font-size: em(16);
+      line-height: 1.2em;
     }
   }
 
@@ -36,39 +29,18 @@
       font-size: em(40);
     }
 
+    &__by {
+      display: block;
+      text-align: right;
+      font-size: 18px;
+      font-style: italic;
+    }
+
     &__copy {
       @include span-columns(6);
+
       font-family: $font-open-sans;
       font-size: em(18);
-    }
-  }
-
-  .reasons {
-    padding: em(50) 0;
-    background-color: $color-downy;
-    font-family: $font-open-sans;
-    color: $color-white;
-
-    &__headline {
-
-      font-size: em(40);
-      font-weight: 300;
-      margin: 0 0 em(10);
-    }
-
-    &__category {
-      @include span-columns(4);
-    }
-
-    &__title {
-      font-size: em(20);
-      margin-bottom: em(10);
-    }
-
-    &__description {
-      font-size: em(18);
-      font-weight: 300;
-      margin: 0;
     }
   }
 }

@@ -1,3 +1,19 @@
 .conditions-view {
+  .masthead {
+    background-image: url('images/masthead-conditions.jpg');
 
+    &__copy {
+      transform: translateY(100%);
+      color: $color-white;
+      max-width: 650px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(60);
+      line-height: 1.2em;
+    }
+  }
 }
