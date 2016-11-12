@@ -1,6 +1,6 @@
-# Equilibrium NJ
+# equilibrium NJ
 
-Static web application
+Static web application, URL: http://www.equilibriumnj.com
 
 ## Installation
 
