@@ -1,0 +1,245 @@
+// ~~~~~~~~~~~~~~~~~~~~~~
+// Defaults
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715) !default;
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1) !default;
+$ease-in-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1) !default;
+
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53) !default;
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94) !default;
+$ease-in-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94) !default;
+
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19) !default;
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+$ease-in-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22) !default;
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1) !default;
+$ease-in-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1) !default;
+
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06) !default;
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1) !default;
+$ease-in-out-quint: cubic-bezier(0.23, 1, 0.32, 1) !default;
+
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035) !default;
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1) !default;
+$ease-in-out-expo: cubic-bezier(0.19, 1, 0.22, 1) !default;
+
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335) !default;
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1) !default;
+$ease-in-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1) !default;
+
+$ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045) !default;
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275) !default;
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55) !default;
+
+$ng-animation-duration: 0.5s !default;
+$ng-animation-easing: $ease-in-out-cubic !default;
+
+// ~~~~~~~~~~~~~~~~~~~~~~
+// Animations
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-down-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes fade-left-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(-5%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-left-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(-5%, 0, 0);
+  }
+}
+
+@keyframes fade-right-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-right-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+  }
+}
+
+@keyframes fade-in-scale-up {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-out-scale-down {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes fade-in-scale-down {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes fade-out-scale-up {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~
+// Mixins
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin ng-enter-animation($animation) {
+  &.ng-enter {
+    animation: $animation;
+  }
+}
+
+@mixin ng-leave-animation($animation) {
+  &.ng-leave {
+    animation: $animation;
+  }
+}
+
+@mixin ng-show-animation($animation) {
+  &.ng-hide-remove {
+    animation: $animation;
+  }
+}
+
+@mixin ng-hide-animation($animation) {
+  &.ng-hide-add {
+    animation: $animation;
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~
+// Classes
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+$ng-animation-list: (
+  (fade-in, fade-out),
+  (fade-up-in, fade-down-out),
+  (fade-left-in, fade-left-out),
+  (fade-right-in, fade-right-out),
+  (fade-in-scale-up, fade-out-scale-down),
+  (fade-in-scale-down, fade-out-scale-up)
+);
+
+@each $enter-animation, $exit-animation in $ng-animation-list {
+
+  .ng-enter-#{$enter-animation} {
+    @include ng-enter-animation($enter-animation $ng-animation-duration $ng-animation-easing);
+  }
+
+  .ng-show-#{$enter-animation} {
+    @include ng-show-animation($enter-animation $ng-animation-duration $ng-animation-easing);
+  }
+
+  .ng-leave-#{$exit-animation} {
+    @include ng-leave-animation($exit-animation $ng-animation-duration $ng-animation-easing);
+  }
+
+  .ng-hide-#{$exit-animation} {
+    @include ng-hide-animation($exit-animation $ng-animation-duration $ng-animation-easing);
+  }
+
+}

@@ -1,0 +1,56 @@
+.home-view {
+  .masthead {
+    background-image: url("images/masthead-home.jpg");
+
+    &__copy {
+      transform: translate(21%, 171%);
+      color: $color-white;
+      max-width: 500px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(54);
+      line-height: 1.2em;
+    }
+  }
+
+  .quote {
+    padding: em(40) 0;
+    text-align: center;
+
+    &__title {
+      margin: 0 auto;
+      padding: 0 10% em(20);
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(30);
+      color: #565656;
+      max-width: 1000px;
+
+      .fa {
+        font-size: em(10);
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    &__by {
+      display: block;
+      text-align: right;
+      font-size: 18px;
+      font-style: italic;
+      padding-right: 10%;
+    }
+
+    &__copy {
+      @include span-columns(6);
+
+      text-align: left;
+      font-family: $font-open-sans;
+    }
+  }
+}

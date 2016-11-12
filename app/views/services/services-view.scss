@@ -1,0 +1,63 @@
+.services-view {
+  .masthead {
+    background-image: url('images/masthead-services.jpg');
+
+    &__copy {
+      transform: translateY(150%);
+      color: $color-white;
+      max-width: 650px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(60);
+      line-height: 1.2em;
+    }
+  }
+
+  .services {
+
+    &__headline {
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(40);
+      text-align: center;
+    }
+
+    &__divider {
+      border-color: $color-downy;
+      width: em(50);
+      margin-bottom: em(80);
+    }
+
+    &__title {
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(29);
+      text-align: center;
+    }
+
+    &__title-by {
+      text-align: center;
+      font-family: $font-open-sans;
+      color: $color-downy;
+      font-weight: 300;
+      font-size: em(16);
+      font-style: italic;
+    }
+
+    &__copy {
+      font-family: $font-open-sans;
+      font-size: em(16);
+    }
+
+    &__image {
+      display: block;
+      margin: 0 0 em(100);
+      width: 100%;
+      max-height: 500px;
+    }
+  }
+}
