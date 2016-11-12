@@ -24,6 +24,12 @@ img {
   max-width: 100%;
 }
 
+p {
+  font-size: em(16);
+  line-height: em(30);
+  color: grey;
+}
+
 .browserupgrade {
   margin: .2em 0;
   background: #ccc;
