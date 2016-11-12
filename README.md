@@ -4,7 +4,7 @@ Static web application, URL: http://www.equilibriumnj.com
 
 ## Installation
 
-Install dependency
+Run
 
 ```javascript
 
@@ -17,8 +17,6 @@ bower install
 ## Development
 
 Gulp Main Tasks
-
-```
 ------------------------------
     default
     build
@@ -27,4 +25,3 @@ Gulp Main Tasks
     watch
     help
 ------------------------------
-```
