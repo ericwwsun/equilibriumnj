@@ -53,4 +53,11 @@
       font-family: $font-open-sans;
     }
   }
+
+  .masthead-bottom {
+    min-height: 450px;
+    background-image: url('images/view-home/masthead-bottom.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
 }
