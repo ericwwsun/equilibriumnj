@@ -18,11 +18,18 @@
   }
 
   .services {
+
     &__headline {
       font-family: $font-open-sans;
       font-weight: 300;
       font-size: em(40);
       text-align: center;
+    }
+
+    &__divider {
+      border-color: $color-downy;
+      width: em(50);
+      margin-bottom: em(80);
     }
 
     &__title {
@@ -32,6 +39,15 @@
       text-align: center;
     }
 
+    &__title-by {
+      text-align: center;
+      font-family: $font-open-sans;
+      color: $color-downy;
+      font-weight: 300;
+      font-size: em(16);
+      font-style: italic;
+    }
+
     &__copy {
       font-family: $font-open-sans;
       font-size: em(16);
@@ -39,7 +55,7 @@
 
     &__image {
       display: block;
-      margin: em(30) 0;
+      margin: 0 0 em(100);
       width: 100%;
       max-height: 500px;
     }

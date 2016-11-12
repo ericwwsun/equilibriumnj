@@ -3,7 +3,8 @@
 
   angular
     .module('equilibrium', [
-      'ngRoute'
+      'ngRoute',
+      'ngAnimate'
     ])
     .config(Config);
 
