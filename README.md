@@ -4,8 +4,6 @@ Static web application, URL: http://www.equilibriumnj.com
 
 ## Installation
 
-Run
-
 ```javascript
 
 npm install
@@ -16,12 +14,31 @@ bower install
 
 ## Development
 
-Gulp Main Tasks
+```
+Main Tasks
 ------------------------------
-    default
     build
     clean
+    copy
+    default
+    help
     server
     watch
-    help
+
+Sub Tasks
 ------------------------------
+    build:html
+    build:images
+    build:js
+    build:libs
+    build:styles
+    build:templates
+    clean:dist
+    deploy:s3
+    test:styles
+    watch:images
+    watch:index
+    watch:js
+    watch:styles
+    watch:templates
+```
