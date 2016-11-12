@@ -7,7 +7,7 @@ module.exports = function(gulp, config, plugins) {
 
     return gulp.src(config.paths.distribution + '/**')
       .pipe(s3({
-        Bucket: config.name,  //  Required
+        Bucket: config.s3Options.bucket,  //  Required
         ACL:    'public-read' //  Needs to be user-defined
       }, {
         // S3 Construcor Options
