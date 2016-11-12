@@ -40,6 +40,10 @@ module.exports = function (plugins) {
     plugins.path.join(config.paths.source, '/**/*.html')
   ];
 
+  config.copy = [
+    plugins.path.join(config.paths.source, '/favicon.ico')
+  ];
+
   // ************************
   // Plugin Options
   // ************************

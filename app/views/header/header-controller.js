@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('equilibrium')
+    .module('equilibriumnj')
     .controller('HeaderController', HeaderController);
 
   HeaderController.$inject = ['$rootScope'];

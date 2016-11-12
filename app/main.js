@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('equilibrium', [
+    .module('equilibriumnj', [
       'ngRoute',
       'ngAnimate',
       'angulartics',

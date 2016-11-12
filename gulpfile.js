@@ -26,5 +26,5 @@ plugins.simpleTaskLoader({
 gulp.task('help', plugins.taskListing);
 
 gulp.task('default',function(){
-  plugins.runSequence('clean', 'build', 'server', 'watch');
+  plugins.runSequence('clean', 'build', 'copy', 'server', 'watch');
 });
