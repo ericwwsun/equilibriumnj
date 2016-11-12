@@ -4,7 +4,9 @@
   angular
     .module('equilibrium', [
       'ngRoute',
-      'ngAnimate'
+      'ngAnimate',
+      'angulartics',
+      'angulartics.google.analytics'
     ])
     .config(Config);
 
@@ -16,7 +18,6 @@
   function Config(
     $locationProvider,
     $routeProvider) {
-
 
     $locationProvider.html5Mode(true);
 
@@ -37,6 +38,7 @@
         name: 'conditions',
         templateUrl: 'views/conditions/conditions-view.html'
       });
+
   }
 
 })();
