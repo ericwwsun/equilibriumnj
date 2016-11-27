@@ -1,4 +1,3 @@
-
 $header-height: 140px;
 
 // header
@@ -32,6 +31,19 @@ $header-height: 140px;
   }
 
   &__contact {
+    a {
+      color: $color-casal;
+      font-family: $font-open-sans;
+      font-size: em(18);
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0 em(10);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     span {
       color: $color-casal;
       font-family: $font-open-sans;
@@ -73,10 +85,9 @@ $header-height: 140px;
         color: $color-downy;
         text-decoration: none;
       }
-
     }
 
-    &--is-active a{
+    &--is-active a {
       color: $color-downy;
     }
   }

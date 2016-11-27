@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  transition: color 0.3s $ease-out-quart, background-color 0.3s $ease-out-quart, border 0.3s $ease-out-quart;
 }
 
 img {
@@ -42,7 +43,7 @@ p {
 }
 
 .row {
-  @include row();
+  @include row;
 }
 
 // sticky footer

@@ -1,0 +1,131 @@
+.contact-view {
+  .masthead {
+    background-image: url("images/masthead-contact.jpg");
+
+    &__copy {
+      transform: translateY(150%);
+      color: $color-white;
+      max-width: 650px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(60);
+      line-height: 1.2em;
+    }
+
+    &__description {
+      color: $color-white;
+      font-family: $font-open-sans;
+      font-weight: 400;
+      font-size: em(24);
+      font-style: italic;
+    }
+  }
+
+  .contact {
+    .container {
+      margin-bottom: em(120);
+      text-align: center;
+    }
+
+    &__headline {
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(40);
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    &__divider {
+      border-color: $color-downy;
+      width: em(50);
+      margin-bottom: em(40);
+    }
+
+    &__title {
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(29);
+      text-align: center;
+    }
+
+    &__copy {
+      font-family: $font-open-sans;
+      font-size: em(16);
+      text-align: center;
+      padding: 0 15%;
+      margin-bottom: em(40);
+    }
+
+    &__copy--highlight {
+      font-weight: 700;
+      padding: 0;
+      margin-bottom: em(80);
+      color: $color-mint;
+    }
+
+    &__download {
+      font-family: $font-open-sans;
+      font-size: em(24);
+      padding: em(10) em(20);
+      border: $color-downy 2px solid;
+      color: $color-mint;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-mint;
+      }
+    }
+  }
+
+  .info {
+    min-height: em(100);
+    background-color: $color-downy;
+    padding: em(80) 0 em(40);
+
+    &__items {
+      list-style: none;
+      margin: 0;
+    }
+
+    &__item {
+      @include span-columns(4);
+
+      text-align: center;
+    }
+
+    &__icon {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: em(30);
+    }
+
+    &__title {
+      color: $color-white;
+      font-family: $font-open-sans;
+      font-weight: 300;
+      font-size: em(24);
+      margin: 0 0 em(20);
+    }
+
+    &__detail {
+      color: $color-white;
+      font-family: $font-open-sans;
+    }
+
+    .maps,
+    .phone,
+    .mail {
+      color: $color-white;
+
+      &:hover {
+        text-decoration: underline;
+        color: $color-mint;
+      }
+    }
+  }
+}
