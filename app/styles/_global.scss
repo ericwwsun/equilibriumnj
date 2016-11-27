@@ -75,4 +75,29 @@ p {
   background-color: $color-light-grey;
   background-position: center center;
   background-size: cover;
+  position: relative;
+
+  &__copy {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+  }
+
+  &__title {
+    font-family: $font-open-sans;
+    font-size: em(40);
+    font-weight: 300;
+    color: $color-white;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: $font-open-sans;
+    font-weight: 300;
+    font-size: em(16);
+    font-style: italic;
+    margin-left: em(5);
+    color: $color-white;
+    margin: 0;
+  }
 }

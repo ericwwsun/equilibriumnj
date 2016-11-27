@@ -1,29 +1,6 @@
-
 .team-view {
   .masthead {
-
-    background-image: url('images/masthead-team.jpg');
-
-    &__copy {
-      transform: translateY(150%);
-      color: $color-white;
-      max-width: 700px;
-    }
-
-    &__title {
-      margin: 0;
-      font-family: $font-open-sans;
-      font-weight: 300;
-      font-size: em(60);
-    }
-
-    &__description {
-      font-family: $font-open-sans;
-      font-weight: 300;
-      font-size: em(16);
-      color: $color-white;
-      margin-left: em(5);
-    }
+    background-image: url("images/masthead-team.jpg");
   }
 
   .the-team {
@@ -46,6 +23,7 @@
 
     &__profile {
       @include span-columns(4);
+
       text-align: right;
       margin-bottom: em(50);
     }
@@ -78,7 +56,7 @@
 
       .fa {
         font-size: 16px;
-         vertical-align: top;
+        vertical-align: top;
         position: relative;
         top: 4px;
       }

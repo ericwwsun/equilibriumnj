@@ -12,28 +12,6 @@
 
   .masthead {
     background-image: url("images/masthead-conditions.jpg");
-
-    &__copy {
-      transform: translateY(150%);
-      color: $color-white;
-      max-width: 650px;
-    }
-
-    &__title {
-      margin: 0;
-      font-family: $font-open-sans;
-      font-weight: 300;
-      font-size: em(60);
-      line-height: 1.2em;
-    }
-
-    &__description {
-      color: $color-white;
-      font-family: $font-open-sans;
-      font-weight: 400;
-      font-size: em(24);
-      font-style: italic;
-    }
   }
 
   .conditions {
