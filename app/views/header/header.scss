@@ -42,16 +42,10 @@ $header-height: 140px;
         text-decoration: underline;
       }
     }
+  }
 
-    span {
-      color: $color-casal;
-      font-family: $font-open-sans;
-      font-size: em(18);
-      text-transform: uppercase;
-      display: inline-block;
-      padding: 0 em(10);
-      border-left: solid 1px $color-light-grey;
-    }
+  &__phone {
+    border-left: solid 1px $color-light-grey;
   }
 }
 
