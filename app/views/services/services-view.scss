@@ -15,7 +15,6 @@
     &__divider {
       border-color: $color-downy;
       width: em(50);
-      margin-bottom: em(80);
     }
 
     &__title {
@@ -36,12 +35,11 @@
 
     &__copy {
       font-family: $font-open-sans;
-      font-size: em(16);
     }
 
     &__image {
       display: block;
-      margin: 0 0 em(100);
+      margin: em(40) 0 em(80);
       width: 100%;
       max-height: 500px;
     }
