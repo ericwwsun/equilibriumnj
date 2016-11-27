@@ -6,13 +6,14 @@
   .quote {
     padding: em(40) 0;
     text-align: center;
+    margin-top: em(50);
 
     &__title {
       margin: 0 auto;
       padding: 0 10% em(20);
       font-family: $font-open-sans;
       font-weight: 300;
-      font-size: em(30);
+      font-size: em(28);
       color: #565656;
       max-width: 1000px;
 
@@ -27,7 +28,7 @@
     &__by {
       display: block;
       text-align: right;
-      font-size: 18px;
+      font-size: 14px;
       font-style: italic;
       padding-right: 10%;
     }

@@ -12,9 +12,9 @@
     &__headline {
       font-family: $font-open-sans;
       font-weight: 300;
-      font-size: em(40);
+      font-size: em(28);
       text-align: center;
-      margin-top: 100px;
+      margin-top: em(50);
     }
 
     &__divider {
