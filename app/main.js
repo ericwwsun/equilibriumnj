@@ -41,6 +41,9 @@
       .when('/contact', {
         name: 'contact',
         templateUrl: 'views/contact/contact-view.html'
+      })
+      .otherwise('/contact', {
+        redirectTo: '/'
       });
 
   }
