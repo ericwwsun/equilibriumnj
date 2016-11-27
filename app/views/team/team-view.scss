@@ -31,6 +31,8 @@
 
     &__bio {
       @include span-columns(8);
+
+      padding-left: em(30);
     }
 
     &__title {
@@ -41,8 +43,8 @@
     }
 
     &__description {
-      font-size: em(18);
       font-family: $font-open-sans;
+      max-width: 85%;
     }
   }
 
