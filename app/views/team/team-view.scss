@@ -1,37 +1,15 @@
-
 .team-view {
   .masthead {
-
-    background-image: url('images/masthead-team.jpg');
-
-    &__copy {
-      transform: translateY(150%);
-      color: $color-white;
-      max-width: 700px;
-    }
-
-    &__title {
-      margin: 0;
-      font-family: $font-open-sans;
-      font-weight: 300;
-      font-size: em(60);
-    }
-
-    &__description {
-      font-family: $font-open-sans;
-      font-weight: 300;
-      font-size: em(16);
-      color: $color-white;
-      margin-left: em(5);
-    }
+    background-image: url("images/masthead-team.jpg");
   }
 
   .the-team {
     &__headline {
       font-family: $font-open-sans;
       font-weight: 300;
-      font-size: em(40);
+      font-size: em(28);
       text-align: center;
+      margin-top: em(50);
     }
 
     &__divider {
@@ -46,24 +24,27 @@
 
     &__profile {
       @include span-columns(4);
+
       text-align: right;
       margin-bottom: em(50);
     }
 
     &__bio {
       @include span-columns(8);
+
+      padding-left: em(30);
     }
 
     &__title {
       font-family: $font-open-sans;
       font-weight: 300;
-      font-size: em(40);
+      font-size: em(30);
       margin: 0 0 em(10);
     }
 
     &__description {
-      font-size: em(18);
       font-family: $font-open-sans;
+      max-width: 85%;
     }
   }
 
@@ -78,7 +59,7 @@
 
       .fa {
         font-size: 16px;
-         vertical-align: top;
+        vertical-align: top;
         position: relative;
         top: 4px;
       }

@@ -5,10 +5,8 @@
       <h1 class="site-header__headline">Integrative Medicine</h1>
 
       <div class="site-header__contact">
-        <span>contact</span>
-        <span class="site-header__phone">
-          <i class="icon icon-phone">201-461-9333</i>
-        </span>
+        <a href="/contact">contact</a>
+        <a class="site-header__phone" href="tel:1-201-461-9333">201-461-9333</a>
       </div>
     </div>
   </div>
@@ -18,6 +16,8 @@
       <li class="site-nav__item" ng-class="{ 'site-nav__item--is-active': vm.routeName == 'team'}"><a href="/team">Team</a></li>
       <li class="site-nav__item" ng-class="{ 'site-nav__item--is-active': vm.routeName == 'services'}"><a href="/services">Services</a></li>
       <li class="site-nav__item" ng-class="{ 'site-nav__item--is-active': vm.routeName == 'conditions'}"><a href="/conditions">Condition We Treat</a></li>
+
+      <li class="site-nav__item" ng-class="{ 'site-nav__item--is-active': vm.routeName == 'contact'}"><a href="/contact">Contact</a></li>
       <!-- <li class="site-nav__item"><a href="/faq">FAQ</a></li> -->
     </ul>
   </nav>

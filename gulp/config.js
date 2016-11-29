@@ -41,14 +41,15 @@ module.exports = function (plugins) {
   ];
 
   config.copy = [
-    plugins.path.join(config.paths.source, '/favicon.ico')
+    plugins.path.join(config.paths.source, '/favicon.ico'),
+    plugins.path.join(config.paths.source, '/downloads/**/*')
   ];
 
   // ************************
   // Plugin Options
   // ************************
   config.jshintOptions = plugins.jsonutil.readFileSync(__dirname + '/../.jshintrc');
-  config.s3Options = plugins.jsonutil.readFileSync(__dirname + '/../../awsaccess.json');
+  config.s3Options = plugins.jsonutil.readFileSync(__dirname + '/../../equilibriumnj-accesskey.json');
   config.s3Options.bucket = 'www.equilibriumnj.com';
   return config;
 }
