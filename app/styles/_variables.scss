@@ -10,3 +10,36 @@ $color-light-grey: #d4d4d4;
 $color-casal: #2e5c6d;
 $color-mint: #346778;
 $color-downy: #70cbd0;
+
+// ~~~~~~~~~~~~~~~~~~~~~~
+// Breakpoints
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+$breakpoints: ("xs": 20em, "sm": 30em, "md": 48em, "lg": 64em, "xl": 120em) !default;
+
+// ~~~~~~~~~~~~~~~~~~~~~~
+// Mixins
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin breakpoint($key) {
+  @media screen and (max-width: map-get($breakpoints, $key)) {
+    @content;
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~
+// z-index map
+// ~~~~~~~~~~~~~~~~~~~~~~
+
+// Z-INDEX MAP
+// how to use: z-index: z("header") or z("header") + 1 or z("header") - 2
+
+$z-layers: (modal: 600, search: 500, header: 400, footer: 300, video: 200, main: 100, default: 1, subzero: -1);
+
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+
+  @return map-get($z-layers, $layer);
+}

@@ -64,15 +64,27 @@
     background-color: $color-downy;
     padding: em(80) 0 em(40);
 
+    @include breakpoint("sm") {
+      padding: em(35) 0;
+    }
+
+
     &__items {
       list-style: none;
       margin: 0;
+      padding: 0 10px;
     }
 
     &__item {
       @include span-columns(4);
 
       text-align: center;
+
+      @include breakpoint("sm") {
+        @include fill-parent;
+
+        margin-bottom: em(30);
+      }
     }
 
     &__icon {
@@ -80,6 +92,11 @@
       display: block;
       margin: 0 auto;
       margin-bottom: em(30);
+
+      @include breakpoint("sm") {
+        max-width: em(80);
+        margin-bottom: em(10);
+      }
     }
 
     &__title {
@@ -88,6 +105,10 @@
       font-weight: 300;
       font-size: em(24);
       margin: 0 0 em(20);
+
+      @include breakpoint("sm") {
+        margin-bottom: em(10);
+      }
     }
 
     &__detail {

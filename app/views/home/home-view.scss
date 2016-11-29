@@ -36,6 +36,7 @@
     &__copy {
       @include span-columns(6);
 
+      padding: 0 em(20);
       text-align: left;
       font-family: $font-open-sans;
     }

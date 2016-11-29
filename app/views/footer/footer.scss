@@ -1,4 +1,3 @@
-
 //footer
 .site-footer {
   min-height: 200px;
@@ -17,6 +16,12 @@
     flex: 1 1 auto;
     font-family: $font-open-sans;
     font-size: em(14);
+
+    @include breakpoint("sm") {
+      text-align: center;
+      color: gray;
+    }
+
 
     .bold {
       font-weight: 700;

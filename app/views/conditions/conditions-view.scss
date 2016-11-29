@@ -56,22 +56,34 @@
       @include span-columns(4);
 
       @include omega(3n);
+
+      @include breakpoint("sm") {
+        @include fill-parent;
+
+        margin-bottom: em(40);
+      }
     }
 
     &__category-image {
       display: block;
       margin: 0 auto em(30);
       max-width: 300px;
+
+      @include breakpoint("sm") {
+        max-width: 80%;
+      }
     }
 
     &__category-title {
-      font-size: em(24);
+      font-size: em(18);
       font-family: $font-open-sans;
       font-weight: 700;
     }
 
     &__symptom {
+      font-size: em(14);
       font-family: $font-open-sans;
+      color: gray;
       margin-bottom: em(10);
     }
   }
