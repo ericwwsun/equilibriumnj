@@ -30,6 +30,15 @@ p {
   font-size: em(14);
   line-height: em(30);
   color: grey;
+
+  a {
+    color: $color-downy;
+  }
+
+  a:hover {
+    color: #0094b2;
+    text-decoration: underline;
+  }
 }
 
 .browserupgrade {
