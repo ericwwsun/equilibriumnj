@@ -27,12 +27,26 @@
 
       text-align: right;
       margin-bottom: em(50);
+
+      @include breakpoint("sm") {
+        padding-left: 0;
+
+        @include fill-parent;
+
+        img {
+          width: 100%;
+        }
+      }
     }
 
     &__bio {
       @include span-columns(8);
 
       padding-left: em(30);
+
+      @include breakpoint("sm") {
+        @include fill-parent;
+      }
     }
 
     &__title {

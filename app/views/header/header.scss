@@ -7,16 +7,31 @@ $header-height: 140px;
     justify-content: start;
     align-items: center;
     min-height: $header-height;
+
+    @include breakpoint("sm") {
+      min-height: auto;
+      padding: 15px;
+    }
   }
 
   &__logo {
     display: inline-block;
+
+    @include breakpoint("sm") {
+      margin-left: 20px;
+    }
+
 
     img {
       width: 220px;
       margin: 0;
       padding-right: 20px;
       border-right: solid 1px $color-light-grey;
+
+      @include breakpoint("sm") {
+        width: 155px;
+        border: none;
+      }
     }
   }
 
@@ -27,6 +42,10 @@ $header-height: 140px;
     font-family: $font-open-sans;
     font-size: rem(50);
     font-weight: 300;
+
+    @include breakpoint("sm") {
+      display: none;
+    }
   }
 
   &__contact {
@@ -42,10 +61,10 @@ $header-height: 140px;
         text-decoration: underline;
       }
     }
-  }
 
-  &__phone {
-    border-left: solid 1px $color-light-grey;
+    .fa-phone {
+      margin-right: 5px;
+    }
   }
 }
 
@@ -59,6 +78,7 @@ $header-height: 140px;
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
+    padding: 0 15px;
   }
 
   &__item {
@@ -66,13 +86,14 @@ $header-height: 140px;
 
     a {
       display: block;
-      padding: em(20) 0;
+      padding: em(20) em(10);
       color: $color-white;
       font-family: $font-roboto;
       font-size: rem(14);
       text-transform: uppercase;
       text-align: center;
       letter-spacing: em(2);
+      font-weight: 300;
 
       &:hover {
         color: $color-downy;

@@ -30,6 +30,15 @@ p {
   font-size: em(14);
   line-height: em(30);
   color: grey;
+
+  a {
+    color: $color-downy;
+  }
+
+  a:hover {
+    color: #0094b2;
+    text-decoration: underline;
+  }
 }
 
 .browserupgrade {
@@ -72,16 +81,22 @@ p {
 }
 
 .masthead {
-  min-height: 550px;
+  min-height: em(550);
   background-color: $color-light-grey;
   background-position: center center;
   background-size: cover;
   position: relative;
 
+  @include breakpoint("sm") {
+    min-height: em(400);
+  }
+
+
   &__copy {
     position: absolute;
     top: 50%;
     transform: translateY(-100%);
+    padding-left: 10%;
   }
 
   &__title {
@@ -102,3 +117,31 @@ p {
     margin: 0;
   }
 }
+
+// .mobile-show {
+//   display: none;
+
+//   @include breakpoint("sm") {
+//     display: block;
+//   }
+// }
+
+.mobile-hide {
+  @include breakpoint("sm") {
+    display: none;
+  }
+}
+
+// .tablet-show {
+//   display: none;
+
+//   @include breakpoint("lg") {
+//     display: block !important;
+//   }
+// }
+
+// .tablet-hide {
+//   @include breakpoint("lg") {
+//     display: none;
+//   }
+// }
