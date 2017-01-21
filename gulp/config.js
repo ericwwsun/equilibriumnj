@@ -18,6 +18,7 @@ module.exports = function (plugins) {
     scripts: [
       config.paths.bower + '/angular/angular.js',
       config.paths.bower + '/angular-route/angular-route.js',
+      config.paths.bower + '/angular-ui-router/release/angular-ui-router.js',
       config.paths.bower + '/angular-animate/angular-animate.js',
       config.paths.bower + '/angulartics/dist/angulartics.min.js',
       config.paths.bower + '/angulartics-google-analytics/dist/angulartics-ga.min.js'
