@@ -4,19 +4,17 @@
 
   angular
     .module('equilibriumnj')
-    .controller('HomeViewController', HomeViewController);
+    .controller('ConditionsViewController', ConditionsViewController);
 
-  HomeViewController.$inject = ['$state', 'MetaDataService'];
+  ConditionsViewController.$inject = ['$state', 'MetaDataService'];
 
   /* @ngInject */
-  function HomeViewController($state, MetaDataService) {
-
+  function ConditionsViewController($state, MetaDataService) {
     var metaData = {
       pageDescription: 'Equilibrium is a leading holistic clinic delivering advanced Physical Therapy, Chiropractic and Acupuncture to people in the Fort Lee, NJ and surrounding areas.'
     };
 
     MetaDataService.setData(metaData);
-
   }
 
 })();
