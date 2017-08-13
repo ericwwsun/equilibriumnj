@@ -11,7 +11,6 @@ plugins.runSequence = require('run-sequence');
 plugins.pngquant = require('imagemin-pngquant');
 plugins.server = require('browser-sync').create('app server');
 plugins.historyApi = require('connect-history-api-fallback');
-plugins.wiredep = require('wiredep').stream;
 
 let config = require('./gulp/config')(plugins);
 
